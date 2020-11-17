@@ -1,3 +1,6 @@
+all:
+	pip uninstall opentims_bruker_bridge -y
+	pip install . --user
 make:
 	echo "hello"
 upload_test_pypi:

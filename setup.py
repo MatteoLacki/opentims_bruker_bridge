@@ -21,6 +21,7 @@ setup(  name='opentims_bruker_bridge',
                     'cpp/win32/timsdata.dll',
                     'cpp/win64/timsdata.dll',
                     'cpp/libtimsdata.so'
-                ]}
+                ]},
+        zip_safe=False
         # install_requires=['numpy']
 )
