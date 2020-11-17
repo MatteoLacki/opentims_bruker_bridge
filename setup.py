@@ -16,5 +16,11 @@ setup(  name='opentims_bruker_bridge',
                      'Topic :: Scientific/Engineering :: Chemistry',
                      'Programming Language :: Python :: 3.6',
                      'Programming Language :: Python :: 3.7'],
+	package_data = {
+                'timsdata':[
+                    'cpp/win32/timsdata.dll',
+                    'cpp/win64/timsdata.dll',
+                    'cpp/libtimsdata.so'
+                ]}
         # install_requires=['numpy']
 )
