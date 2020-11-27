@@ -1,0 +1,18 @@
+The various files in this repository are covered by multiple licences.
+
+This software links with the (provided) binary-only library files from 
+Bruker SDK, which are redistributed as a part of this package, and provided 
+under the terms outlined in the file LICENCE-BRUKER.txt.
+
+The Bruker SDK files in turn include, link to or otherwise use various
+third-party software, the licences of which are listed in
+THIRD-PARTY-LICENSE-README.txt file.
+
+The files covered by the above two licences are listed in the
+BRUKER-REDIST.txt file.
+
+The remaining files are covered by the terms of 2-clause BSD licence, see
+LICENCE-BSD2.txt
+
+You must accept the terms outlined in all three of these files to use this
+software.
