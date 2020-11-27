@@ -1,0 +1,8 @@
+#Legalese
+include LICENCE.txt
+include LICENCE-BRUKER.txt
+include LICENCE-BSD2.txt
+include original_bruker_tdf_readme.txt
+include README.md
+include redist.txt
+include THIRD-PARTY-LICENSE-README.txt
