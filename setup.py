@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 
 setup(  name='opentims_bruker_bridge',
         packages=find_packages(),
-        version='0.0.1',
+        version='1.0.0',
         description='Description.',
         long_description='Long description.',
         author='MatteoLacki',
