@@ -3,9 +3,9 @@ from setuptools import setup, find_packages
 
 setup(  name='opentims_bruker_bridge',
         packages=find_packages(),
-        version='1.0.0',
-        description='Description.',
-        long_description='Long description.',
+        version='1.0.1',
+        description='Bruker dll and so files.',
+        long_description='Files needed to run conversion: time of flight to mass over charge and scan number to drift time.',
         author='MatteoLacki',
         author_email='matteo.lacki@gmail.com',
         url='https://github.com/MatteoLacki/opentims_bruker_bridge.git',
