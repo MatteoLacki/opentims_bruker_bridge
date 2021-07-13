@@ -1,3 +1,4 @@
+import sys
 import os
 import platform
 
@@ -25,3 +26,9 @@ def get_so_paths():
     except KeyError:
         # unsupported platform: return everything and hope for the best
         return list(set(_paths.values()))
+
+def get_appropriate_so_path():
+    '''Use only in proof of concept, quick-and-dirty code. In serious software,
+    the try everything and use the one which loads without errors pattern should
+    be used.'''
+    return _paths[platform.architecture()]
