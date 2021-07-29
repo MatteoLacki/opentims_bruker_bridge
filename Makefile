@@ -3,13 +3,13 @@ all:
 	pip install . --user
 make:
 	echo "hello"
-upload_test_pypi:
-	rm -rf dist || True
+sdist:
 	python setup.py sdist
+upload_test_pypi: sdist
 	twine upload --repository-url https://test.pypi.org/legacy/ dist/* 
-upload_pypi:
-	rm -rf dist || True
-	python setup.py sdist
+upload_pypi: sdist
 	twine upload dist/*
+clean:
+	rm -rf dist
 py:
 	python -m IPython
