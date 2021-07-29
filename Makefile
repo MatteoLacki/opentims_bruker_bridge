@@ -8,8 +8,11 @@ sdist:
 upload_test_pypi: sdist
 	twine upload --repository-url https://test.pypi.org/legacy/ dist/* 
 upload_pypi: sdist
+	python setup.py sdist
 	twine upload dist/*
 clean:
 	rm -rf dist
 py:
 	python -m IPython
+clean:
+	rm -rf dist build *.egg-info
