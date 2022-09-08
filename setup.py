@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 
 setup(  name='opentims_bruker_bridge',
         packages=find_packages(),
-        version='1.0.3',
+        version='1.1.0',
         description='Bruker dll and so files.',
         long_description='Files needed to run conversion: time of flight to mass over charge and scan number to drift time.',
         author='MatteoLacki',
