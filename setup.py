@@ -16,7 +16,8 @@ setup(  name='opentims_bruker_bridge',
                      'Programming Language :: Python :: 3.6',
                      'Programming Language :: Python :: 3.7',
                      'Programming Language :: Python :: 3.8',
-                     'Programming Language :: Python :: 3.9'],
+                     'Programming Language :: Python :: 3.9',
+                     'Programming Language :: Python :: 3.10'],
 	package_dir={'opentims_bruker_bridge':'opentims_bruker_bridge'},
         package_data = {'opentims_bruker_bridge':
                 [
