@@ -4,12 +4,15 @@ all:
 make:
 	echo "hello"
 sdist:
-	python setup.py sdist
+	python -m build --sdist
+
 upload_test_pypi: sdist
-	twine upload --repository-url https://test.pypi.org/legacy/ dist/* 
+	twine upload --repository-url https://test.pypi.org/legacy/ dist/*  --verbose
+
 upload_pypi: sdist
 	python setup.py sdist
-	twine upload dist/*
+	twine upload dist/* --verbose
+
 clean:
 	rm -rf dist
 py:
