@@ -1,33 +1,32 @@
 # This Python file uses the following encoding: utf-8
-from setuptools import setup, find_packages
+from setuptools import find_packages
+from setuptools import setup
 
-setup(  name='opentims_bruker_bridge',
-        packages=find_packages(),
-        version='1.2.0',
-        description='Bruker dll and so files.',
-        long_description='Files needed to run conversion: time of flight to mass over charge and scan number to drift time.',
-        author='MatteoLacki',
-        author_email='matteo.lacki@gmail.com',
-        url='https://github.com/MatteoLacki/opentims_bruker_bridge.git',
-        keywords=['OpenTIMS', 'TimsTOF'],
-        classifiers=['Development Status :: 4 - Beta',
-                     'Intended Audience :: Science/Research',
-                     'Topic :: Scientific/Engineering :: Chemistry',
-                     'Programming Language :: Python :: 3.6',
-                     'Programming Language :: Python :: 3.7',
-                     'Programming Language :: Python :: 3.8',
-                     'Programming Language :: Python :: 3.9',
-                     'Programming Language :: Python :: 3.10'
-                     'Programming Language :: Python :: 3.11'
-                     'Programming Language :: Python :: 3.12'
-                     'Programming Language :: Python :: 3.13'
-                     'Programming Language :: Python :: 3.14'
-                     ],
-	package_dir={'opentims_bruker_bridge':'opentims_bruker_bridge'},
-        package_data = {'opentims_bruker_bridge':
-                [
-                    'win64/timsdata.dll',
-                    'libtimsdata.so'
-                ]},
-        zip_safe=False
+setup(
+    name="opentims_bruker_bridge",
+    packages=find_packages(),
+    version="1.2.0",
+    description="Bruker dll and so files.",
+    long_description="Files needed to run conversion: time of flight to mass over charge and scan number to drift time.",
+    author="MatteoLacki",
+    author_email="matteo.lacki@gmail.com",
+    url="https://github.com/MatteoLacki/opentims_bruker_bridge.git",
+    keywords=["OpenTIMS", "TimsTOF"],
+    classifiers=[
+        "Development Status :: 4 - Beta",
+        "Intended Audience :: Science/Research",
+        "Topic :: Scientific/Engineering :: Chemistry",
+        "Programming Language :: Python :: 3.6",
+        "Programming Language :: Python :: 3.7",
+        "Programming Language :: Python :: 3.8",
+        "Programming Language :: Python :: 3.9",
+        "Programming Language :: Python :: 3.10",
+        "Programming Language :: Python :: 3.11",
+        "Programming Language :: Python :: 3.12",
+        "Programming Language :: Python :: 3.13",
+        "Programming Language :: Python :: 3.14",
+    ],
+    package_dir={"opentims_bruker_bridge": "opentims_bruker_bridge"},
+    package_data={"opentims_bruker_bridge": ["win64/timsdata.dll", "libtimsdata.so"]},
+    zip_safe=False,
 )
